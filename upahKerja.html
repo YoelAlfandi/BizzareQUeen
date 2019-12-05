@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Menghitung Upah Kerja Anda</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='upahKerja1function.js'></script>
+    <style>
+        td,th{
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border="solid black 1px;">
+            <tr>
+                <th colspan="2" style="font-size: 30px;">Solusi Perhitungan Upah Anda</th>
+            </tr>
+            <tr>
+                <td><label>Jam Masuk :</label></td>
+                <td><input type="time" id="jamMasuk"><br></td>
+            </tr>
+            <tr>
+                <td><label>Jam Keluar :</label></td>
+                <td><input type="time" id="jamKeluar" max="20:00"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center>
+                <button style="padding: 1opx; font-size: 20px;" onclick="hitungUpah()">Hitung</button>
+                </center></td>
+            </tr>
+            <tr>
+                <td><label>Upah Kerja :</label></td>
+                <td><input type="text" id="outUpahKerja" readonly><br></td>
+            </tr>
+            <tr>
+                <td><label>Upah Lembur :</label></td>
+                <td><input type="text" id="outUpahLembur" readonly><br></td>
+            </tr>
+            <tr>
+                <td><label>Upah Total :</label></td>
+                <td><input type="text" id="outUpahTotal" readonly></input>
+            </tr>
+            <tr>
+                <td><label>Keterangan :</label></td>
+                <td><input type="text" id="outKeterangan" style="width: 400px"></input>
+            </tr>       
+            </table>
+            
+    </center>
+    
+</body>
+</html>
